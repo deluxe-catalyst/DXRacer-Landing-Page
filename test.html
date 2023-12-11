@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .button {
+      width: 100px;
+      height: 50px;
+      background-color: lightblue;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: width 0.3s ease; /* Добавляем переход для плавного изменения ширины */
+    }
+
+    .button:hover {
+      animation: springAnimation 0.5s ease;
+    }
+
+    @keyframes springAnimation {
+      0%, 100% {
+        width: 100px; /* Исходная ширина */
+      }
+      25% {
+        width: 120px; /* Увеличиваем ширину в середине анимации */
+      }
+      50% {
+        width: 80px; /* Уменьшаем ширину в середине анимации */
+      }
+      75% {
+        width: 110px; /* Увеличиваем ширину в середине анимации */
+      }
+    }
+  </style>
+  <title>Spring Animation Button</title>
+</head>
+<body>
+
+  <button class="button">Наведи на меня</button>
+
+</body>
+</html>
